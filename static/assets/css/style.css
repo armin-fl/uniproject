@@ -905,3 +905,11 @@
     background: var(--bs-secondary) !important;
 }
 /*** copyright end ***/
+
+/** Custom css **/
+
+.training-img {
+    height: 400px; /* Set this to your desired height */
+    object-fit: cover ; /* Ensures the image covers the container without distortion */
+    width: 100%; /* Make sure the image spans the full width of its container */
+}
