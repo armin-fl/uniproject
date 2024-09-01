@@ -1,3 +1,328 @@
 {% extends "base.html" %}
 
+{% load static %}
 
+{% block content %}
+
+        
+        <!-- Carousel Start -->
+        <div class="carousel-header">
+            <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#carouselId" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#carouselId" data-bs-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <img src="{% static 'images\asd.jpg' %}" class="img-fluid" alt="Image">
+                        <div class="carousel-caption">
+                            <div class="text-center p-4" style="max-width: 900px;">
+                                <h2 class="display-1 text-capitalize text-white mb-3 mb-md-4 wow fadeInUp" data-wow-delay="0.3s"> Nutrition Therapy</h2>
+                                <p class="text-white mb-4 mb-md-5 fs-5 wow fadeInUp" data-wow-delay="0.5s">Nestlé Health Science is the first of a new breed of health science companies. Nestlé Health Science goal is to advance the therapeutic role of nutrition and change the course of health management for consumers, patients, physicians, nurses, and healthcare partners alike.
+                                 </p>
+                                <a class="btn btn-primary border-secondary rounded-pill text-white py-3 px-5 wow fadeInUp" data-wow-delay="0.7s" href="#">More Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="{% static '\images\asd.png' %}" class="img-fluid" alt="Image">
+                        <div class="carousel-caption">
+                            <div class="text-center p-4" style="max-width: 900px;">
+                                <h2 class="display-1 text-capitalize text-white mb-3 mb-md-4 wow fadeInUp" data-wow-delay="0.3s">Plasma Derived Products</h2>
+                                <p class="text-white mb-4 mb-md-5 fs-5 wow fadeInUp" data-wow-delay="0.5s">Darman Ara was co-founder of five Plasmapheresis centers during 2008 to 2011, in addition two centers have been founded by Darman Ara independently. There are fourteen plasma collection centers up and running by the end of 2022. In 2023, there are nine new plasma centers under construction from which Darman Ara Group is founder of six.
+                                </p>
+                                <a class="btn btn-primary border-secondary rounded-pill text-white py-3 px-5 wow fadeInUp" data-wow-delay="0.7s" href="#">More Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="{% static '\images\download.jpg' %}" class="img-fluid" alt="Image">
+                        <div class="carousel-caption">
+                            <div class="text-center p-4" style="max-width: 900px;">
+                                <h2 class="display-1 text-capitalize text-white mb-3 mb-md-4 wow fadeInUp" data-wow-delay="0.3s">Infusion Therapy</h2>
+                                <p class="text-white mb-4 mb-md-5 fs-5 wow fadeInUp" data-wow-delay="0.5s">The field of infusion therapy implies the treatment of a patient with intravenously applied infusion solutions in order to enable a patient’s recovery or improvement of his illness. Depending on the underlying illness, the solution contains an appropriate active pharmaceutical ingredient.
+
+                                </p>
+                                <a class="btn btn-primary border-secondary rounded-pill text-white py-3 px-5 wow fadeInUp" data-wow-delay="0.7s" href="#">More Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon bg-secondary wow fadeInLeft" data-wow-delay="0.2s" aria-hidden="false"></span>
+                    <span class="visually-hidden-focusable">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+                    <span class="carousel-control-next-icon bg-secondary wow fadeInRight" data-wow-delay="0.2s" aria-hidden="false"></span>
+                    <span class="visually-hidden-focusable">Next</span>
+                </button>
+            </div>
+        </div>
+        <!-- Carousel End -->
+
+
+        <!-- Services Start -->
+        <div class="container-fluid service overflow-hidden pt-5">
+            <div class="container py-5">
+                <div class="section-title text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="sub-style">
+                        <h5 class="sub-title text-primary px-3">Most Read Articles</h5>
+                    </div>
+                    <h2 class="display-5 mb-4">Effort For Health</h2>
+                    <p class="mb-0">"We discuss the importance of blood plasma, methods of plasma donation, plasma-derived medications, and the diseases that are treated with plasma-derived products. Additionally, within the Nestlé Health Science portfolio, we focus on advancing the therapeutic role of nutrition to transform the approach to health management for consumers and patients, and to support doctors, nurses, and healthcare professionals."
+
+                    </p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="service-item">
+                            <div class="service-inner">
+                                <div class="service-img">
+                                    <img src="{% static '\images\Picture3.jpg' %}" class="img-fluid w-100 rounded" style="height: 230px; object-fit: cover;"alt="Image">
+                                </div>
+                                <div class="service-title">
+                                    <div class="service-title-name">
+                                        <div class="bg-primary text-center rounded p-3 mx-5 mb-4">
+                                            <a href="#" class="h4 text-white mb-0">Obesity</a>
+                                        </div>
+                                        <a class="btn bg-light text-secondary rounded-pill py-3 px-5 mb-4" href="#">Explore More</a>
+                                    </div>
+                                    <div class="service-content pb-4">
+                                        <a href="#"><h4 class="text-white mb-4 py-3">Obesity</h4></a>
+                                        <div class="px-4">
+                                            <p class="mb-4">Obesity is a condition in which an excessive accumulation of fat leads to potentially adverse health conditions.</p>
+                                            <a class="btn btn-primary border-secondary rounded-pill py-3 px-5" href="#">Explore More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="service-item">
+                            <div class="service-inner">
+                                <div class="service-img">
+                                    <img src="{% static '\images\Picture1.jpg' %}" class="img-fluid w-100 rounded" style="height: 230px; object-fit: cover;" style="height: 230px; object-fit: cover;" alt="Image">
+                                </div>
+                                <div class="service-title">
+                                    <div class="service-title-name">
+                                        <div class="bg-primary text-center rounded p-3 mx-5 mb-4">
+                                            <a href="#" class="h4 text-white mb-0">Inherited Metabolic 
+                                            </a>
+                                        </div>
+                                        <a class="btn bg-light text-secondary rounded-pill py-3 px-5 mb-4" href="#">Explore More</a>
+                                    </div>
+                                    <div class="service-content pb-4">
+                                        <a href="#"><h4 class="text-white mb-4 py-3">Inherited Metabolic </h4></a>
+                                        <div class="px-4">
+                                            <p class="mb-4">Inborn Errors of Metabolism (IEM) are rare genetic disorders in which the body cannot properly convert food into energy. </p>
+                                            <a class="btn btn-primary border-secondary rounded-pill text-white py-3 px-5" href="#">Explore More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="service-item">
+                            <div class="service-inner">
+                                <div class="service-img">
+                                    <img src="{% static '\images\Picture2.jpg' %}" class="img-fluid w-100 rounded"style="height: 230px; object-fit: cover;" alt="Image">
+                                </div>
+                                <div class="service-title">
+                                    <div class="service-title-name">
+                                        <div class="bg-primary text-center rounded p-3 mx-5 mb-4">
+                                            <a href="#" class="h4 text-white mb-0">Failure To Thrive
+                                            </a>
+                                        </div>
+                                        <a class="btn bg-light text-secondary rounded-pill py-3 px-5 mb-4" href="#">Explore More</a>
+                                    </div>
+                                    <div class="service-content pb-4">
+                                        <a href="#"><h4 class="text-white mb-4 py-3">Failure To Thrive
+                                        </h4></a>
+                                        <div class="px-4">
+                                            <p class="mb-4">Children with weight or weight gain significantly below average for their age and sex are more prone to faltering growth.
+                                            </p>
+                                            <a class="btn btn-primary border-secondary rounded-pill text-white py-3 px-5" href="#">Explore More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="service-item">
+                            <div class="service-inner">
+                                <div class="service-img">
+                                    <img src="{% static '\images\vlcsnap-2021-05-15-13h46m30s692.png' %}" class="img-fluid w-100 rounded" style="height: 230px; object-fit: cover;" alt="Image">
+                                </div>
+                                <div class="service-title">
+                                    <div class="service-title-name">
+                                        <div class="bg-primary text-center rounded p-3 mx-5 mb-4">
+                                            <a href="#" class="h4 text-white mb-0">Darman Ara in the Plasma industry
+                                            </a>
+                                        </div>
+                                        <a class="btn bg-light text-secondary rounded-pill py-3 px-5 mb-4" href="#">Explore More</a>
+                                    </div>
+                                    <div class="service-content pb-4">
+                                        <a href="#"><h4 class="text-white mb-4 py-3">Darman Ara in the Plasma industry
+                                        </h4></a>
+                                        <div class="px-4">
+                                            <p class="mb-4">Darman Ara established 5 plasmapheresis centers between 2008 and 2011, with 2 more centers added in 2013</p>
+                                            <a class="btn btn-primary border-secondary rounded-pill text-white py-3 px-5" href="#">Explore More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="service-item">
+                            <div class="service-inner">
+                                <div class="service-img">
+                                    <img src="{% static '\images\20220727_104632-1600x720-1.jpg' %}" class="fixed-height w-100 rounded " style="height: 230px; object-fit: cover;" alt="Image" >
+                                </div>
+                                <div class="service-title">
+                                    <div class="service-title-name">
+                                        <div class="bg-primary text-center rounded p-3 mx-5 mb-4">
+                                            <a href="#" class="h4 text-white mb-0">World Hepatitis Day</a>
+                                        </div>
+                                        <a class="btn bg-light text-secondary rounded-pill py-3 px-5 mb-4" href="#">Explore More</a>
+                                    </div>
+                                    <div class="service-content pb-4">
+                                        <a href="#"><h4 class="text-white mb-4 py-3">World Hepatitis Day</h4></a>
+                                        <div class="px-4">
+                                            <p class="mb-4">Darman Ara Co. and Biotest AG attendance at 8th Tehran Hepatitis Conference
+                                            </p>
+                                            <a class="btn btn-primary border-secondary rounded-pill text-white py-3 px-5" href="#">Explore More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="service-item">
+                            <div class="service-inner">
+                                <div class="service-img">
+                                    <img src="{% static '\images\DAC-Social-World-Obesity-Day-Final-1240x600-1.jpg' %}" class="img-fluid w-100 rounded" style="height: 230px; object-fit: cover;"alt="Image">
+                                </div>
+                                <div class="service-title">
+                                    <div class="service-title-name">
+                                        <div class="bg-primary text-center rounded p-3 mx-5 mb-4">
+                                            <a href="#" class="h4 text-white mb-0">World Obesity Day
+                                            </a>
+                                        </div>
+                                        <a class="btn bg-light text-secondary rounded-pill py-3 px-5 mb-4" href="#">Explore More</a>
+                                    </div>
+                                    <div class="service-content pb-4">
+                                        <a href="#"><h4 class="text-white mb-4 py-3">World Obesity Day
+                                        </h4></a>
+                                        <div class="px-4">
+                                            <p class="mb-4">World Obesity Day is observed globally on 4th of March. Obesity is a complex disease, with many root causes throughout society.</p>
+                                            <a class="btn btn-primary border-secondary rounded-pill text-white py-3 px-5" href="#">Explore More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Services End -->
+
+
+
+
+        <!-- Training Start -->
+        <div class="container-fluid training overflow-hidden bg-light py-5">
+            <div class="container py-5">
+                <div class="section-title text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="sub-style">
+                        <h5 class="sub-title text-primary px-3">OUR PRODUCTS</h5>
+                    </div>
+                    <h1 class="display-5 mb-4">Get the Best Coacing Service Training with Our Travisa</h1>
+                    <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat deleniti amet at atque sequi quibusdam cumque itaque repudiandae temporibus, eius nam mollitia voluptas maxime veniam necessitatibus saepe in ab? Repellat!</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="training-item">
+                            <div class="training-inner">
+                                <img src="{% static '\images\OPTIFAST-MILK-SHAKE-2.0-chocolate-612x53g-Barcode-7613035895904-600x600-1.jpg' %}" class="img-fluid w-100 rounded training-img" alt="Image">
+                                <div class="training-title-name">
+                                    <a href="#" class="h4 text-white mb-0">Chocolate shake<a>
+                                    <a href="#" class="h4 text-white mb-0"></a>
+                                </div>
+                            </div>
+                            <div class="training-content bg-secondary rounded-bottom p-4">
+                                <a href="#"><h4 class="text-white">Chocolate shake</h4></a>
+                                <p class="text-white-50">Optifast VLCD Chocolate Shake can be enjoyed with every meal as part of the Optifast program.</p>
+                                <a class="btn btn-secondary rounded-pill text-white p-0" href="#">Read More <i class="fa fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="training-item">
+                            <div class="training-inner">
+                                <img src="{% static '\images\Resource-Junior-Tin-Scoop-400g-Vanilla-ME_44014533_TD100254_C1C1-2048x2048.png' %}" class="img-fluid w-100 rounded training-img " alt="Image">
+                                <div class="training-title-name">
+                                    <a href="#" class="h4 text-white mb-0">Resource Junior
+                                    </a>
+                                    <a href="#" class="h4 text-white mb-0"></a>
+                                </div>
+                            </div>
+                            <div class="training-content bg-secondary rounded-bottom p-4">
+                                <a href="#"><h4 class="text-white">Resource Junior</h4></a>
+                                <p class="text-white-50">Resource Junior is a complete diet to support growth and weight gain in children 1-10 years of age.</p>
+                                <a class="btn btn-secondary rounded-pill text-white p-0" href="#">Read More <i class="fa fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="training-item">
+                            <div class="training-inner">
+                                <img src="{% static '\images\Albiomin5_250ml.jpg' %}" class="img-fluid w-100 rounded training-img " alt="Image">
+                                <div class="training-title-name">
+                                    <a href="#" class="h4 text-white mb-0">Albiomin</a>
+                                    <a href="#" class="h4 text-white mb-0"></a>
+                                </div>
+                            </div>
+                            <div class="training-content bg-secondary rounded-bottom p-4">
+                                <a href="#"><h4 class="text-white">Albiomin</h4></a>
+                                <p class="text-white-50">Albiomin 5% (50 g/l) is a solution for intravenous infusion. One liter of the solution contains 50 g of human plasma protein, of which at least 96% is human albumin.</p>
+                                <a class="btn btn-secondary rounded-pill text-white p-0" href="#">Read More <i class="fa fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
+                        <div class="training-item">
+                            <div class="training-inner">
+                                <img src="{% static '\images\Bar.jpg' %}" class="img-fluid w-100 rounded training-img " alt="Image">
+                                <div class="training-title-name">
+                                    <a href="#" class="h4 text-white mb-0">Cappuccino Bar
+                                    </a>
+                                    <a href="#" class="h4 text-white mb-0"></a>
+                                </div>
+                            </div>
+                            <div class="training-content bg-secondary rounded-bottom p-4">
+                                <a href="#"><h4 class="text-white">Cappuccino Bar
+                                </h4></a>
+                                <p class="text-white-50">How to use: Optifast bars are convenient and ready to eat. By the standards of the Optifast program, one bar is equivalent to one meal in terms of its nutritional value.
+
+                                </p>
+                                <a class="btn btn-secondary rounded-pill text-white p-0" href="#">Read More <i class="fa fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 text-center">
+                        <a class="btn btn-primary border-secondary rounded-pill py-3 px-5 wow fadeInUp" data-wow-delay="0.1s" href="#">View More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Training End -->
+
+
+{% endblock content %}

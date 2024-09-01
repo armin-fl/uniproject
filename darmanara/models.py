@@ -2,6 +2,7 @@ from django.db import models
 from django.contrib.auth.models import User
 from django.utils.text import slugify
 from django.utils import timezone
+from django.conf import settings
 
 class Blog(models.Model):
     STATUS_CHOICES = (
@@ -14,7 +15,7 @@ class Blog(models.Model):
     excerpt = models.CharField(max_length=70, blank=True)
     content = models.TextField()
     author = models.ForeignKey(User, on_delete=models.CASCADE, related_name='blog_posts')
-    feature_image = models.ImageField(upload_to='blog_images/', blank=True, null=True)
+    feature_image = models.ImageField(upload_to='static/media', blank=True, null=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     published_at = models.DateTimeField(default=timezone.now)
@@ -27,6 +28,3 @@ class Blog(models.Model):
         if not self.slug:
             self.slug = slugify(self.title)
         super(Blog, self).save(*args, **kwargs)
-
-    def __str__(self):
-        return self.title

@@ -52,6 +52,10 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'config.urls'
 
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  # Define the path where collected static files will be stored.
+STATIC_URL = '/static/'  # URL to use when referring to static files.
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
